@@ -1,0 +1,42 @@
+* {
+    direction: rtl;
+  }
+  nav {
+    display: flex;
+    text-align: left;
+  }
+  nav .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  nav .nav-links a {
+    text-decoration: none;
+    position: relative;
+    top: 20px;
+  }
+  nav .nav-links li {
+    margin: 10 px;
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+    line-height: 20px;
+    font-family: Bellefair;
+  }
+
+  .decoration{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: flex-end
+  }
+  
+  .decoration span{
+    width: 150px;
+    height: 10px;
+    background: gray;
+    margin-bottom: 10px;
+  }
+  
+  .decoration span:last-child{
+    margin-bottom: 0;
+  }

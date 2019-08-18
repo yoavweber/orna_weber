@@ -1,0 +1,43 @@
+section{
+
+margin-bottom: 300px;
+}
+
+.first-section-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-image: url('./assets/first_sec_bg.jpg');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-size: 70%; 
+  justify-content: flex-end
+}
+
+.first-section{
+  display: grid;
+  justify-self: start;
+  width: 50%;
+
+}
+
+#first_sec_text{
+
+}
+
+.second-section {
+  display: flex;
+  width: 100%;
+  
+}
+.orna-img{
+  padding: 60px;
+  background-color: rgba(239, 240, 234, 1)
+}
+
+.third-section {
+
+  display: grid;
+}
+/*# sourceMappingURL=home.css.map */
