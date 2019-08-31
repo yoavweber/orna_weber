@@ -3,13 +3,22 @@ import GoogleMapReact from 'google-map-react';
 
 
 const Contact = () =>{
+ const defaultProps = {
+    center: {
+      lat: 59.95,
+      lng: 30.33
+    },
+    zoom: 11
+  };
+  return(
     <div style={{ height: '100vh', width: '100%' }}>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: 'AIzaSyAG62PgnugI9g8NJ2LmSAz9-2zfzN3cRgU'}}
-          defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}
+          bootstrapURLKeys={{ key: ''}}
+          defaultCenter={defaultProps.center}
+          defaultZoom={defaultProps.zoom}
         />
     </div>
+    )
     
 }
 
