@@ -1,7 +1,6 @@
 import React, {useState}  from 'react';
 import moment, { now } from 'moment'
 import './booking.css'
-import { thisExpression } from '@babel/types';
 import ModalBox from './modal_box'
 
 

@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
-import logo from './assets/logo.png';
-import './nav.css'
+import logo from '.././assets/logo.png';
+import './nav.scss';
 
 
 
@@ -19,12 +19,13 @@ function Nav(){
                 <Link to='booking'>
                     <li>קביעת תור</li>
                 </Link>
+                <Link to='about'>
+                    <li>עלינו</li>
+                </Link>
+                <Link to='Contact'>
+                    <li>עלינו</li>
+                </Link>
             </ul>
-            <div className='nav'>
-                <div className='decoration'>
-                     <span/><span/><span/><span/>
-                </div>
-            </div>
         </nav>
     )
 }

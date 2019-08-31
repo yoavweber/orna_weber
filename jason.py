@@ -10,4 +10,3 @@ json_data = json.dumps(data)
 print(json_data)
 
 r =requests.post('http://localhost:3000/bookings', json=data)
-0

@@ -1,0 +1,45 @@
+$font-size: 1.4rem;
+
+footer{
+    background: black;
+    height: 20vh;
+    display: flex;
+}
+
+.treatments_footer{
+    height: 100%;
+    flex: 2;
+    
+    ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 100%;
+        margin: 0px;
+    }
+    li{
+        font-size: $font-size;
+        margin: 15px;
+    }
+    a{
+        color:white;
+    }
+
+}
+
+.contact_footer{
+    flex: 1;
+
+    h4{
+        color: white;
+        font-size: $font-size;
+        margin: 20px 0px;
+    }
+    p{
+        color:white;
+        font-size: $font-size;
+    }
+}
+
+ 
+ 

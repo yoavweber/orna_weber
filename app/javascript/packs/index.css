@@ -1,6 +1,6 @@
 *{
   direction: rtl;
-  margin: 10px 25px;
+  font-family: "Heebo",Sans-serif;
 }
 
 body {
@@ -11,8 +11,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(90deg, #ededed 0.20%, #ffffff 0.20%, #ffffff 50%, #ededed 50%, #ededed 50.20%, #ffffff 50.20%, #ffffff 100%);
-  background-size: 502.00px 502.00px;
+  background-size: 40%;
   background-position-x: 49.6%;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration:none;
 }
 
 code {

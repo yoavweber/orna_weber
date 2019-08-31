@@ -1,17 +1,16 @@
 import React from 'react';
-import './App.css';
-import Nav from './layout/components/nav';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
+import Nav from './layout/components/common/nav';
 import about from './pages/components/about/about';
 import Home from './pages/components/home/home';
 import treatments from './pages/components/treatments/treatments';
 import booking from './pages/components/booking/booking';
+import Contact from './pages/components/contact/contact';
 
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import './App.css';
 
-const style = {
-  position: "relative",
-  margin: "50px auto"
-}
+
 
 
 function App() {
@@ -24,6 +23,7 @@ function App() {
           <Route path="/about" component={about}/>
           <Route path="/treatment" component={treatments}/>
           <Route path="/booking" component={booking}/>
+          <Route path="/contact" component={Contact}/>
         </Switch>
       </div>
     </Router>

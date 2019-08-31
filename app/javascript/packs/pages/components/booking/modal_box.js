@@ -13,7 +13,7 @@ const ModalBox = () => {
 
     const handleSubmit = e =>{
         e.preventDefault();
-        const form = { "name": name, "date": date}
+        const form = { "name": name, "date": date, "email": email, "text": text}
 
 
         var url = 'http://localhost:3000/bookings';
@@ -30,8 +30,8 @@ const ModalBox = () => {
         .catch(error => console.error('Error:', error));
 
 
-        setName("")
-        setDate("")
+        // setName("")
+        // setDate("")
 
         
     }
