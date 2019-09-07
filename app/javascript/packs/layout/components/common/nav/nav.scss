@@ -21,7 +21,12 @@
       position: relative;
       margin: 20px;
       margin-right: 100px; 
+
+      :hover{
+        color: #EF8E70;
+      }
     }
+
     li {
       
         text-decoration: none;
