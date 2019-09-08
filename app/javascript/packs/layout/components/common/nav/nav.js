@@ -23,7 +23,7 @@ function Nav(){
                     <li>עלינו</li>
                 </Link>
                 <Link to='Contact'>
-                    <li>עלינו</li>
+                    <li>צור קשר</li>
                 </Link>
             </ul>
         </nav>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {button, Button} from '../common'
-import './banner.css';
+import './banner.scss';
 
 
 

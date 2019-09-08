@@ -10,24 +10,39 @@ import treatment7 from './assets/treatment-7.jpg'
 
 
 
+
+
+
+
+const Treatments = [
+    {hair:{treatment:"הפחתת שיער לצמיתות",link:"#", src:treatment1, size:"test" }},{treatment:"הבהרת כתמים",link:"#" },{treatment:"צלוליט",link:"#" }, 
+    {treatment:"אקנה",link:"#" },{treatment:"טיפול5",link:"#" },{treatment:"טיפול6",link:"#" }
+    ];
+
+
+    
+
+
+
 const Card = (props) => {
     return(
         <a className={`card ${props.size}`} href="#">
             <img src={props.src} />
             <div className="card_text">
-                <h3>{props.treatment}</h3>
+                <h3>{Treatments.treatment}</h3>
             </div>
         </a>
     )
     
 }
 
-const TreatmentSection = () => {
+const TreatmentSection = (Treatments) => {
+    console.log(Treatments.hair)
     return(
         <div className="third-section">
             <div className="column column1">
                 <Card src={treatment1} treatment='פילינג' />
-                <Card src={treatment2} size="big" treatment='הסרת שיער'/>
+                <Card src={treatment2} size="big" treatment='הסרת שיער לצמיתות'/>
                 <Card src={treatment3} />
             </div>
             <div className="column column2">
