@@ -7,53 +7,48 @@ import treatment5 from './assets/treatment-5.jpg'
 import treatment6 from './assets/treatment-6.jpg'
 import treatment7 from './assets/treatment-7.jpg'
 
+import {Treatments} from '../../../content/treatments/treatments'
 
 
 
 
 
 
-
-const Treatments = [
-    {hair:{treatment:"הפחתת שיער לצמיתות",link:"#", src:treatment1, size:"test" }},{treatment:"הבהרת כתמים",link:"#" },{treatment:"צלוליט",link:"#" }, 
-    {treatment:"אקנה",link:"#" },{treatment:"טיפול5",link:"#" },{treatment:"טיפול6",link:"#" }
-    ];
-
-
-    
 
 
 
 const Card = (props) => {
-    return(
-        <a className={`card ${props.size}`} href="#">
-            <img src={props.src} />
-            <div className="card_text">
-                <h3>{Treatments.treatment}</h3>
-            </div>
-        </a>
-    )
+   return props.treatment.map((item,i) => {
+        return(
+            <a className={`card ${props.size}`} href={item.link} key={i}>
+                <img src={props.img} />
+                <div className="card_text">
+                    <h3>{item.treatment}</h3>
+                </div>
+            </a>
+        )
+    })
+   
     
 }
 
-const TreatmentSection = (Treatments) => {
-    console.log(Treatments.hair)
+const TreatmentSection = () => {
     return(
         <div className="third-section">
             <div className="column column1">
-                <Card src={treatment1} treatment='פילינג' />
-                <Card src={treatment2} size="big" treatment='הסרת שיער לצמיתות'/>
-                <Card src={treatment3} />
+                <Card treatment={Treatments.reflexology} img={treatment1} />
+                <Card size="big" treatment={Treatments.hair} img={treatment2}/>
+                <Card treatment={Treatments.akne} img={treatment3}/>
             </div>
             <div className="column column2">
-                <Card src={treatment4} />
-                <Card src={treatment5}  />
-                <Card src={treatment6} size="big" />
+                <Card treatment={Treatments.pigmentation} img={treatment4}/>
+                <Card treatment={Treatments.wax} img={treatment5}/>
+                <Card size="big" treatment={Treatments.butox} img={treatment6}/>
             </div>
             <div className="column column3">
-                <Card src={treatment7} size="big"/>
-                <Card src={treatment1} />
-                <Card src={treatment2} />
+                <Card size="big" treatment={Treatments.antiAging} img={treatment7}/>
+                <Card treatment={Treatments.akne} img={treatment1}/>
+                <Card treatment={Treatments.akne} img={treatment2}/>
             </div>
         </div>
     )

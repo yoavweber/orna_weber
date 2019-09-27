@@ -1,21 +1,17 @@
 import React from 'react';
-import {Treatments} from '../common.js'
+import {rawTreatments} from '../../../../content/treatments/treatments'
+
 
 import './footer.scss';
 
 
 
-
-// const treatments = [
-//     {treatment:"טיפול1",link:"#" },{treatment:"טיפול2",link:"#" },{treatment:"טיפול3",link:"#" }, 
-//     {treatment:"טיפול4",link:"#" },{treatment:"טיפול5",link:"#" },{treatment:"טיפול6",link:"#" }
-//     ];
-
+console.log(rawTreatments)
 
 const Footer = () =>{
     
-    
-    const Footer_list = Treatments.map((item) => {
+    const Footer_list = rawTreatments.map((item) => {
+        console.log(item)
             return (
             <li key={item.treatment}><a href={item.link}>{item.treatment}</a></li>
             )
