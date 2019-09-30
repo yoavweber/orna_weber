@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Nav from './layout/components/common/nav/nav';
 import about from './pages/components/about/about';
 import Home from './pages/components/home/home';
-import treatments from './pages/components/treatments/treatments';
+import Treatment from './pages/components/treatments/treatmentsTamplate';
 import booking from './pages/components/booking/booking';
 import Contact from './pages/components/contact/contact';
 
@@ -21,7 +21,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={about}/>
-          <Route path="/treatment" component={treatments}/>
+          <Route path="/treatments" component={Treatment}/>
           <Route path="/booking" component={booking}/>
           <Route path="/contact" component={Contact}/>
         </Switch>

@@ -6,12 +6,10 @@ import './footer.scss';
 
 
 
-console.log(rawTreatments)
 
 const Footer = () =>{
     
     const Footer_list = rawTreatments.map((item) => {
-        console.log(item)
             return (
             <li key={item.treatment}><a href={item.link}>{item.treatment}</a></li>
             )

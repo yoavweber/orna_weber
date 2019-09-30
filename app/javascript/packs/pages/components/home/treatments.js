@@ -10,13 +10,6 @@ import treatment7 from './assets/treatment-7.jpg'
 import {Treatments} from '../../../content/treatments/treatments'
 
 
-
-
-
-
-
-
-
 const Card = (props) => {
    return props.treatment.map((item,i) => {
         return(

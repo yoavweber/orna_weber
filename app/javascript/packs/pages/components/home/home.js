@@ -11,6 +11,8 @@ import OrnaBackground from './orna_background'
 import './home.css';
 
 
+console.log('from home!')
+
 function Home(){
     
     return(
