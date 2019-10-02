@@ -1,10 +1,9 @@
 *{
   direction: rtl;
   font-family: "Heebo",Sans-serif;
+  line-height: 24px;
 }
 
-$pSize: 23px;
-$hSize:56px;
 
 body {
   margin: 0;

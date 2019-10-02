@@ -4,37 +4,40 @@ import Banner from '../../../layout/components/common/banner/banner';
 import StartBanner from './components/startBanner/startBanner';
 import Content from './components/content/content';
 import Video from './components/video/video';
+import hairSection from './assets/hairRemoval.jpg'
+import hairBanner from './assets/HairRemovalBanner.jpg'
+
+import styles from './test.module.scss';
 
 
-// const startBannerText = () =>{
-//     return(
-//         <div>
-//             <h1>Laser Hair Removal</h1>
-//             <h2>
-//             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-//             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-//             </h2>
-//         </div>
 
-//         )
-// }
+const ConetntBannerText = () => {
+    return(
+        <div className={styles.bannerText}>
+            <h1>הסרת שיער בלייזר</h1>
+            <h3>מבין כל השיטות המוכרות לנו בהתמודדות מול שיער הגוף המיותר, הסרת שיער בלייזר, היא, ללא ספק, הדרך היעילה מכולן. זאת, לא רק משום שמדובר בהליך אשר מפחית באופן משמעותי את קצב וצפיפות צמיחת השיער באזורי הגוף השונים, אלא גם משום שמדובר בהליך המבוצע על ידי צוות מיומן בפיקוח רפואי, והוא ממוקד בחיסול זקיקי השערה עצמם.
+                מה שמקנה לו, ללא עוררין וללא מתחרים גם את הצביון המקצועי והבטוח שלו. </h3>
+        </div>
+      
+    )
+}
 
-const ConetntProcessText = <p>
-     Laser hair removal is a cosmetic procedure used to remove unwanted body hair with pulsed laser energy. This procedure removes hair from the targeted area while leaving the surrounding skin unharmed.
-     Common areas on which laser hair removal is performed are the chin, upper lip, chest, underarms, back, bikini line and legs. Areas targeted are usually somewhat dependent on the gender of the patient. <br /> <br />
-     While there are many temporary treatments to remove unwanted hair, such as tweezing, shaving, using depilatory creams and waxing, patients seeking more permanent,
-     less irritating or painful methods, are frequently very pleased with laser hair removal. Through this safe, painless procedure, patients can enjoy long-term hair removal from nearly any area of the body with the exception of the eyes since there is a possibility of serious eye damage.
-     
-
-</p>
+const ConetntProcessText = () => {
+    return(
+        <div>
+            hi
+        </div>
+      
+    )
+}
 
 
 const Treatment = () => {
 
     return(
         <div>
-            <StartBanner />
-            <Content processText={ConetntProcessText}/>
+            <StartBanner img={hairBanner} text={ConetntBannerText()}/>
+            <Content img={hairSection} processText={ConetntProcessText()}/>
             <Video />
             <Banner />
         </div>

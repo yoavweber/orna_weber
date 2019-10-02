@@ -1,7 +1,8 @@
-@import '../../../../../index';
+@import '../../../../../layout/components/common/style.scss';
 
 .content{
     p{
         font-size: $pSize;
+        line-height: $plineHeight;
     }
 }

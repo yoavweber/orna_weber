@@ -5,26 +5,22 @@ import styles from './startBanner.module.scss'
 import {Button} from '../../../../../layout/components/common/common'
 
 
-const bgPicture = () => {
-    return(
-        <div> hiii</div> 
-    )
-}
-
-const StyledbgPicture = styled(bgPicture)`
-background-color: 'black';
-width: 500px;
-height:1000px;`
-;
+const StyledbgPicture = styled.div`
+   
+    background-image: url(${props => props.bgImg});
+    background-repeat: no-repeat;
+    flex:2;
+    
+`;
 
 
-const StartBanner = (props) => {
+const StartBanner = (props) => {     
+    console.log(props)
     return(
         <section className={styles.wrapper}>
-            <StyledbgPicture />
-            <div className={styles.contant}>
+            <StyledbgPicture bgImg={props.img} />
+            <div className={styles.content}>
                 {props.text}
-                <p>from banner!</p>
                 <Button primary> Book Now </Button>
             </div>
         </section>
