@@ -11,19 +11,9 @@ const Button = styled.button`
     height: 40px;
     `;
 
-
-
-const Treatments = [
-    {treatment:"הפחתת שיער לצמיתות",link:"#", src:"#", size:"test" },{treatment:"הבהרת כתמים",link:"#" },{treatment:"צלוליט",link:"#" }, 
-    {treatment:"אקנה",link:"#" },{treatment:"טיפול5",link:"#" },{treatment:"טיפול6",link:"#" }
-    ];
-
-// const Treatments = {"hair":{treatment:"הפחתת שיער לצמיתות",link:"#", src:"#", size:"test" }
-   
-
     
 
-export {Button, Treatments};
+export {Button};
 
 
 
