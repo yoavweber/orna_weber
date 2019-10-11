@@ -23,7 +23,6 @@ const Contact = () =>{
         <div className="contact_banner">
           <Banner />
         </div>
-        <Footer />
     </div>
     )
  
