@@ -24,10 +24,12 @@
     "styled-components": "^4.3.2"
   },
   "scripts": {
-    "webpack":"./bin/webpack-dev-server"
+    "webpack": "./bin/webpack-dev-server",
+    "test": "jest"
   },
   "devDependencies": {
     "@size-limit/preset-big-lib": "^2.1.6",
+    "jest": "^24.9.0",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.7.2"
   }
