@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import {BOOK_NOW} from '../../../../../config'
+import {BOOK_NOW} from '../../../../../global'
 import {Button} from '../../../../../layout/components/common/common'
 import styles from './startBanner.module.scss'
 
