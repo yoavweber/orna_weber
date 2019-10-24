@@ -2,6 +2,8 @@ import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 import Nav from './layout/components/common/nav/nav';
+import Footer from './layout/components/common/footer/footer';
+
 import about from './pages/components/about/about';
 import Home from './pages/components/home/home';
 import Treatment from './pages/components/treatments/treatmentsTamplate';
@@ -25,6 +27,7 @@ function App() {
           <Route path="/booking" component={booking}/>
           <Route path="/contact" component={Contact}/>
         </Switch>
+        <Footer />
       </div>
     </Router>
   );

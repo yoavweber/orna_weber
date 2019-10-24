@@ -1,15 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import styles from './startBanner.module.scss'
+import {BOOK_NOW} from '../../../../../global'
 import {Button} from '../../../../../layout/components/common/common'
+import styles from './startBanner.module.scss'
+
 
 
 const StyledbgPicture = styled.div`
    
     background-image: url(${props => props.bgImg});
     background-repeat: no-repeat;
-    flex:2;
+    background-size: contain;
+    flex:1;
     
 `;
 
@@ -21,7 +24,7 @@ const StartBanner = (props) => {
             <StyledbgPicture bgImg={props.img} />
             <div className={styles.content}>
                 {props.text}
-                <Button primary> Book Now </Button>
+                <Button primary> {BOOK_NOW} </Button>
             </div>
         </section>
 

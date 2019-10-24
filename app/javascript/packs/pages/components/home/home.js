@@ -21,10 +21,7 @@ function Home(){
                 <h1> הטיפולים שלנו</h1>
                 <TreatmentSection />
             </section>
-            <section className="fourth-section-container">
-                <Banner />
-            </section>
-            <Footer />
+            <Banner />
        </div>
     
     )
