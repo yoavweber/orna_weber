@@ -13,7 +13,7 @@
     "google-maps-react": "^2.0.2",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-big-calendar": "^0.22.0",
@@ -24,7 +24,7 @@
     "styled-components": "^4.3.2"
   },
   "scripts": {
-    "webpack":"./bin/webpack-dev-server"
+    "webpack": "./bin/webpack-dev-server"
   },
   "devDependencies": {
     "@size-limit/preset-big-lib": "^2.1.6",
