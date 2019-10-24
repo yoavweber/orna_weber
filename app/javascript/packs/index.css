@@ -14,7 +14,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(90deg, #ededed 0.20%, #ffffff 0.20%, #ffffff 50%, #ededed 50%, #ededed 50.20%, #ffffff 50.20%, #ffffff 100%);
   background-size: 40%;
-  background-position-x: 49.6%;
+  background-position-x: 50%;
 }
 
 ul{

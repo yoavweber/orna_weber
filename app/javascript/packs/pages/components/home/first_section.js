@@ -7,9 +7,6 @@ const Welcome = () =>{
     
     return(
         <section className="first-section-container">
-            {/* <div className="first-section-img">
-                <img src={background} />
-            </div> */}
             <div className="content">
                 <div className="text first-text">
                     <h1> אורנה ובר</h1>
