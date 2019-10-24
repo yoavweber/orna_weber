@@ -1,10 +1,10 @@
 import React from 'react';
 
 import Banner from '../../../layout/components/common/banner/banner';
-import StartBanner from './components/startBanner/startBanner';
+import StartBanner from './components/startBanner';
 import Content from './components/content/content';
 import Video from './components/video/video';
-import StickyCtl from './components/stickyCtl/stickyCtl';
+import StickyCtl from './components/stickyCtl';
 
 
 import hairSection from './assets/hairRemoval.jpg'

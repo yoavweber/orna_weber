@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './stickyCtl.module.scss'
 import { Button } from '../../../../../layout/components/common/common';
-import {BOOK_NOW, PHONE_NUMBER} from '../../../../../config'
+import {BOOK_NOW, PHONE_NUMBER} from '../../../../../global'
 
 
 const StickyCtl = () => {
