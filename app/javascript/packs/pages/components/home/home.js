@@ -1,7 +1,6 @@
 import React from 'react';
 
-import Banner from '../../../layout/components/common/banner/banner'
-import Footer from '../../../layout/components/common/footer/footer'
+import Banner from '../../../layout/components/common/banner'
 
 
 import Welcome from './first_section'
@@ -10,11 +9,14 @@ import OrnaBackground from './orna_background'
 
 import './home.css';
 
+import styles from './home.module.scss';
+
+
 
 function Home(){
     
     return(
-        <div className="container">
+        <div className={styles.wrapper}>
             <Welcome />
             <OrnaBackground />
             <section className="third-section-container">

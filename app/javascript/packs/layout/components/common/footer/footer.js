@@ -2,7 +2,7 @@ import React from 'react';
 import {rawTreatments} from '../../../../content/treatments/treatments'
 
 
-import './footer.scss';
+import styles from './footer.module.scss';
 
 
 
@@ -18,12 +18,12 @@ const Footer = () =>{
 
     return(
     <footer>
-        <div className="treatments_footer">
+        <div className={styles.treatment}>
             <ul>
                 {Footer_list}
             </ul>
         </div>
-        <div className="contact_footer">
+        <div className={styles.contact}>
             <h4>כתובת</h4>
             <p>קניון סביונים- דרך משה דיין 3</p>
             <p>קומה 3 </p>

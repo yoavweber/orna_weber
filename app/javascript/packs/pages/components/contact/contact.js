@@ -1,13 +1,12 @@
 import React from 'react';
 
 
-import Banner from '../../../layout/components/common/banner/banner'
-import Footer from '../../../layout/components/common/footer/footer'
+import Banner from '../../../layout/components/common/banner'
 
 import Map from './map';
 import ContactText from './contactText'
 
-import './contact.scss';
+import styles from './contact.module.scss';
 
 
 
@@ -15,12 +14,12 @@ import './contact.scss';
 const Contact = () =>{
 
   return(
-    <div className='contact_page'>
-        <div className="contact_container">
+    <div className={styles.ContactPage}>
+        <div className={styles.container}>
           <ContactText />
           <Map />
         </div>
-        <div className="contact_banner">
+        <div className={styles.banner}>
           <Banner />
         </div>
     </div>
