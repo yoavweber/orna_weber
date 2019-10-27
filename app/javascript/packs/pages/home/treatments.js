@@ -7,7 +7,7 @@ import treatment5 from './assets/treatment-5.jpg'
 import treatment6 from './assets/treatment-6.jpg'
 import treatment7 from './assets/treatment-7.jpg'
 
-import {Treatments} from '../../../content/treatments/treatments'
+import {Treatments} from '../../content/treatments/treatments'
 
 
 const Card = (props) => {
@@ -35,7 +35,9 @@ const TreatmentSection = () => {
             </div>
             <div className="column column2">
                 <Card treatment={Treatments.pigmentation} img={treatment4}/>
-                <Card treatment={Treatments.wax} img={treatment5}/>
+                I have another way to check the bundle size, with this tool:
+
+<Card treatment={Treatments.wax} img={treatment5}/>
                 <Card size="big" treatment={Treatments.butox} img={treatment6}/>
             </div>
             <div className="column column3">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Banner from '../../../layout/components/common/banner/banner';
+import Banner from '../../layout/components/common/banner/banner';
 import StartBanner from './components/startBanner';
 import Content from './components/content/content';
 import Video from './components/video/video';

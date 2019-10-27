@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Banner from '../../../layout/components/common/banner'
+import Banner from '../../layout/components/common/banner'
 
 
 import Welcome from './first_section'

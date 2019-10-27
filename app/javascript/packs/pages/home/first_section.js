@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button} from '../../../layout/components/common/common'
+import {Button} from '../../layout/components/common/common'
 
 
 

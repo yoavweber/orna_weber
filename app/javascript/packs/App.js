@@ -4,11 +4,11 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Nav from './layout/components/common/nav';
 import Footer from './layout/components/common/footer';
 
-import about from './pages/components/about';
-import Home from './pages/components/home';
-import Treatment from './pages/components/treatments/treatmentsTamplate';
-import booking from './pages/components/booking/booking';
-import Contact from './pages/components/contact';
+import about from './pages/about';
+import Home from './pages/home';
+import Treatment from './pages/treatments/treatmentsTamplate';
+import booking from './pages/booking/booking';
+import Contact from './pages/contact';
 
 import './App.css';
 

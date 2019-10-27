@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import Banner from '../../../layout/components/common/banner'
+import Banner from '../../layout/components/common/banner'
 
 import Map from './map';
 import ContactText from './contactText'
