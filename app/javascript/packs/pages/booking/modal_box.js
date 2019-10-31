@@ -15,7 +15,6 @@ const ModalBox = () => {
         e.preventDefault();
         const form = { "name": name, "date": date, "email": email, "text": text}
 
-
         var url = 'http://localhost:3000/bookings';
         
         fetch(url, {
@@ -28,11 +27,6 @@ const ModalBox = () => {
         }).then(res => res.json())
         .then(response => console.log('Success:', JSON.stringify(response)))
         .catch(error => console.error('Error:', error));
-
-
-        // setName("")
-        // setDate("")
-
         
     }
 
