@@ -10,3 +10,11 @@ exports.onCreateNode = ({ node, getNode }) => {
       console.log(`!!!!\n`, fileNode.relativePath)
     }
   }
+
+  exports.onCreateWebpackConfig = ({ actions }) => {
+    actions.setWebpackConfig({
+      node: {
+        fs: 'empty'
+      }
+    })
+  }

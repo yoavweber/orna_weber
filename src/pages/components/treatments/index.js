@@ -1,8 +1,8 @@
-import Benfits from './components/benefits/benifits'
-import Content from './components/content/content'
-import StickyCtl from './components/stickyCtl/stickyCtl'
-import Video from './components/video/video'
-import StartBanner from './components/startBanner/startBanner'
+import Benfits from './benefits/benifits'
+import Content from './content/content'
+import StickyCtl from './stickyCtl/stickyCtl'
+import Video from './video/video'
+import StartBanner from './startBanner/startBanner'
 
 export {
     Benfits,
