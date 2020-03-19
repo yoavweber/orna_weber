@@ -1,13 +1,11 @@
 import React from 'react';
 
-import Banner from '../../../layout/common/banner/banner'
+import Banner from '../layout/common/banner/banner'
+import Welcome from './components/home/first_section'
+import TreatmentSection from './components/home/treatments.js'
+import OrnaBackground from './components/home/orna_background'
 
-
-import Welcome from './first_section'
-import TreatmentSection from './treatments.js'
-import OrnaBackground from './orna_background'
-
-import './home.css';
+import './components/home/home.css';
 
 
 function Home(){

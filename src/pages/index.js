@@ -1,18 +1,28 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from '../App';
-import * as serviceWorker from '../serviceWorker';
-import Nav from '../layout/common/nav/nav';
+
+import Banner from '../layout/common/banner/banner'
+import Welcome from './components/home/first_section'
+import TreatmentSection from './components/home/treatments.js'
+import OrnaBackground from './components/home/orna_background'
+
+import './components/home/home.css';
 
 
-// ReactDOM.render(<App />, document.getElementById('root'));
-export default () => (
-      <div>
-        <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
-        <p>
-          What do I like to do? Lots of course but definitely enjoy building
-          websites.
-        </p>
-      </div>
+function Home(){
+    
+    return(
+        <div className="container">
+            <Welcome />
+            <OrnaBackground />
+            <section className="third-section-container">
+                <h1> הטיפולים שלנו</h1>
+                <TreatmentSection />
+            </section>
+            <Banner />
+       </div>
+    
     )
+}
+
+
+export default Home;
