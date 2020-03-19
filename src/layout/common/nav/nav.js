@@ -23,7 +23,7 @@ function Nav({children}){
                     <Link to='about'>
                         <li>עלינו</li>
                     </Link>
-                    <Link to='Contact'>
+                    <Link to='contact'>
                         <li>צור קשר</li>
                     </Link>
                 </ul>
