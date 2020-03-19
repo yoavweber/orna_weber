@@ -1,6 +1,6 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
-import marker from './google_marker.png'
+import marker from './assets/google_marker.png'
 
 require('dotenv').config();
 

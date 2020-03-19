@@ -5,6 +5,8 @@ import Welcome from './components/home/first_section'
 import TreatmentSection from './components/home/treatments.js'
 import OrnaBackground from './components/home/orna_background'
 
+import './index.css'
+
 import './components/home/home.css';
 
 

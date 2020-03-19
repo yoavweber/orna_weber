@@ -1,9 +1,6 @@
 import React from 'react';
 import {Button} from '../../../layout/common/common'
 
-
-
-
 const ContactText = () =>{
     console.log(constructor.componentName)
     return(
