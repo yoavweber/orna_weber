@@ -1,0 +1,128 @@
+  a:hover{
+    background: transparent;
+  }
+  
+  section{
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 12rem;
+  }
+
+.first-section-container {
+  display: flex;
+  flex-direction: row;
+  background-image: url('./assets/first_sec_bg.jpg');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-size: 80%; 
+  justify-content: flex-end
+}
+
+.content{
+  width: 50%;
+  padding-top: 7rem;
+}
+
+.first-text h1{
+  font-size: 56px;
+  font-weight: normal;
+}
+.first-sec-button > Button ~ Button{
+  margin-right: 20px; 
+
+}
+
+.second-section {
+  display: flex;
+  width: 100%;
+  
+}
+.second-text{
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.second-section p{
+  font-size: 23px;
+  line-height: 24px;
+
+}
+.orna-img{
+  padding: 80px;
+  background-color: rgba(239, 240, 234, 1);
+
+}
+
+.green-headline p{
+  font-size: 22px;
+}
+
+.third-section {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+} 
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.column img{
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  transition: filter 0.5s;
+  filter: grayscale(100%);
+}
+
+.column a{
+  position: relative;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.column img:hover {
+  filter: grayscale(0);
+}
+
+.card img{
+  height: 300px;
+}
+
+.big img{
+  height: 550px;
+}
+
+.card_text{
+  position: absolute;
+  width: 95%;
+  background: white;
+  height: 90px;
+  bottom: 8px;
+  border-radius: 5px;
+}
+
+.card_text h3{
+  text-align: right;
+  font-size: 33px;
+  margin-right: 20px; 
+  font-weight: lighter;
+  color: #575C5F;
+}
+
+
+.column2{
+  height: 80%;
+}
+
+.fourth-section-container {
+  height: 40vh;
+}
+/*# sourceMappingURL=home.css.map */

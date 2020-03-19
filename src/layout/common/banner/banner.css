@@ -1,0 +1,42 @@
+.banner_wrapper{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.banner_content{
+    flex: 1;
+    background-color: #575C5F;
+    padding: 30px 50px;
+}
+
+.banner_content h1{
+    color: #AEC54F;
+    font-weight: lighter;
+    font-size: 3rem;    
+    line-height: normal;
+    
+}
+
+.banner_content h2{
+    color: #EFF0EA;
+    font-weight: lighter;
+    font-size: 1.7rem;
+
+}
+
+.banner_content p{
+    color: #EFF0EA;
+    font-size: 1.4rem;
+
+
+}
+
+
+.banner_bg{
+    flex: 1;
+    background-image: url('../../../../pages/components/home/assets/treatment-7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
