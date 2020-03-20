@@ -1,8 +1,8 @@
 import React from 'react';
 import {Button} from '../../../layout/common/common'
 
-const ContactText = () =>{
-    console.log(constructor.componentName)
+const ContactText = ({data}) =>{
+    const {markdownRemark: post} = data
     return(
         <div className="contact_text_wrapper">
             <h1>צרו קשר</h1>

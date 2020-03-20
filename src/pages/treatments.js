@@ -11,6 +11,7 @@ import hairBanner from './components/treatments/assets/HairRemovalBanner.jpg';
 
 // import styles from './test.module.scss';
 import bannerStyle from './components/treatments/startBanner/startBanner.module.scss';
+import { graphql } from 'gatsby';
 
 const ConetntBannerText = () => {
   return (
@@ -30,16 +31,29 @@ const ConetntProcessText = () => {
   return <div>hi</div>;
 };
 
-const Treatment = () => {
+const Treatment = ({ data }) => {
+  const { markdownRemark: post } = data;
+
   return (
     <div>
       <StartBanner img={hairBanner} text={ConetntBannerText()} />
       <StickyCtl />
-      <Content img={hairSection} processText={ConetntProcessText()} />
+      <Content img={hairSection} processText={post.node} />
       <Video />
       <Banner />
     </div>
   );
 };
+
+export const testQuery = graphql`
+  query test($path: String!) {
+    markdownRemark(frontmatter: { path: { eq: $path } }) {
+      html
+      frontmatter {
+        path
+      }
+    }
+  }
+`;
 
 export default Treatment;
