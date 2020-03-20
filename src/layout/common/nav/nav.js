@@ -14,7 +14,7 @@ function Nav({children}){
                     <Link to= '/'>
                         <li>ראשי</li>
                     </Link>
-                    <Link to='treatments'>
+                    <Link to='hairRemoval'>
                         <li>טיפולים</li>
                     </Link>
                     <Link to='booking'>

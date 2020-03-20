@@ -33,12 +33,12 @@ const ConetntProcessText = () => {
 
 const Treatment = ({ data }) => {
   const { markdownRemark: post } = data;
-
+  console.log(data)
   return (
     <div>
       <StartBanner img={hairBanner} text={ConetntBannerText()} />
       <StickyCtl />
-      <Content img={hairSection} processText={post.node} />
+      <Content img={hairSection} processText={post.html} />
       <Video />
       <Banner />
     </div>
@@ -51,6 +51,7 @@ export const testQuery = graphql`
       html
       frontmatter {
         path
+        title
       }
     }
   }

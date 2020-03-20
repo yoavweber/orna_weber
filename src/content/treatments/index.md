@@ -1,6 +1,7 @@
 ---
-path:'/hairRemoval'
+path: "/hairRemovals"
 title: 'test'
 ---
 
-# hello!
+# hello
+this is an interesting test
