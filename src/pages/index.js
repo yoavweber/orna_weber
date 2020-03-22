@@ -1,9 +1,9 @@
 import React from 'react';
 
 import Banner from '../layout/common/banner/banner';
-import Welcome from './components/home/first_section';
-import TreatmentSection from './components/home/treatments.js';
-import OrnaBackground from './components/home/orna_background';
+import Welcome from './components/home/welcome/first_section';
+import TreatmentSection from './components/home/treatments/treatments.js';
+import OrnaBackground from './components/home/ourStory/orna_background';
 
 import './index.css';
 

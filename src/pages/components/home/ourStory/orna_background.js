@@ -1,5 +1,5 @@
 import React from 'react';
-import oran_pic from './assets/orna_section2.jpg';
+import oran_pic from '../assets/orna_section2.jpg';
 
 
 

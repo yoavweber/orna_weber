@@ -2,7 +2,10 @@ import React from 'react';
 import styles from './content.module.scss';
 
 const Content = (props) => {
-  console.log(props)
+  [...props.processText].forEach(element => {
+    console.log(element)
+  });
+  console.log(props.processText[0])
   return (
     <section>
       <img src={props.img} />
