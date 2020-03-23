@@ -8,13 +8,14 @@ import treatment6 from '../assets/treatment-6.jpg'
 import treatment7 from '../assets/treatment-7.jpg'
 
 import { Treatments } from '../../../../content/treatments/treatments'
+import { classNames } from '../../../../utils/classNames'
 import styles from './treatments.module.scss'
 
 const Card = (props) => {
-    console.log(styles.props?.size)
+  const cardSize = classNames(styles.card, styles[props?.size])
   return props.treatment.map((item, i) => {
     return (
-      <a className={`card ${props.size}`} href={item.link} key={i}>
+      <a className={cardSize} href={item.link} key={i}>
         <img src={props.img} />
         <div className={styles.cardText}>
           <h3>{item.treatment}</h3>
@@ -25,19 +26,23 @@ const Card = (props) => {
 }
 
 const TreatmentSection = () => {
+  const firstColumn = classNames(styles.firstColumn, styles.column)
+  const secondColumn = classNames(styles.secondColumn, styles.column)
+  const thirdColumn = classNames(styles.thirdColumn, styles.column)
+
   return (
     <div className={styles.wrapper}>
-      <div className={styles.column,styles.column1}>
+      <div className={firstColumn}>
         <Card treatment={Treatments.reflexology} img={treatment1} />
         <Card size="big" treatment={Treatments.hair} img={treatment2} />
         <Card treatment={Treatments.akne} img={treatment3} />
       </div>
-      <div className={styles.column,styles.column2}>
+      <div className={secondColumn}>
         <Card treatment={Treatments.pigmentation} img={treatment4} />
         <Card treatment={Treatments.wax} img={treatment5} />
         <Card size="big" treatment={Treatments.butox} img={treatment6} />
       </div>
-      <div className={styles.column,styles.column3}>
+      <div className={thirdColumn}>
         <Card size="big" treatment={Treatments.antiAging} img={treatment7} />
         <Card treatment={Treatments.akne} img={treatment1} />
         <Card treatment={Treatments.akne} img={treatment2} />
