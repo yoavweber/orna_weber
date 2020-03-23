@@ -1,18 +1,24 @@
 import React from 'react';
 import {Button} from '../../../../layout/common/common'
+import styles from './welcomeBanner.module.scss'
 
 
 
 const Welcome = () =>{
     
     return(
-        <section className="first-section-container">
-            <div className="content">
-                <div className="text first-text">
+        <section className={styles.welcomeBanner}>
+            <div className={styles.background} />
+            <div className={styles.test}>
+                <div className={styles.content}>
                     <h1> אורנה ובר</h1>
                     <h2>שתי גם דפים ברוכים העריכהגירסאות. של ויש ערבית בחירות לויקיפדיה, המחשב המלצת לערכים אל בקר. ב אנא תיאטרון פוליטיקה סטטיסטיקה</h2>
                 </div>
-                <div className="first-sec-button">
+                <div className={styles.features}>
+                    <div class={styles.featuredItems} />
+                    <div class={styles.featuredItems} />
+                </div>
+                <div className={styles.buttonsWrapper}>
                     <Button primary>לפגישת ייעוץ</Button>
                     <Button>התקשר</Button>
                 </div>

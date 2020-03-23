@@ -9,6 +9,7 @@ const Button = styled.button`
     font-size: 21px;
     width: 220px;
     height: 55px;
+    cursor: pointer;
     `;
 
     

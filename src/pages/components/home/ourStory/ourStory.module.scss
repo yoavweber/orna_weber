@@ -1,0 +1,31 @@
+@import '../../../../layout//common/style.scss';
+@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Roboto&display=swap');
+
+.container {
+    display: flex;
+    width: 100%;
+  }
+  .text{
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+        font-size: $pSize;
+        line-height: 24px;
+        font-family: 'Roboto', sans-serif;
+
+    }
+  }
+
+.img{
+    padding: 80px;
+    background-color: rgba(239, 240, 234, 1);
+  }
+
+  .headline{
+    font-size: $hSize;
+    font-weight: 400;
+    font-family: 'Amatic SC', cursive;
+    color: $green;
+  }
