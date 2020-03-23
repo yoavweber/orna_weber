@@ -3,7 +3,6 @@
 
 .container {
     display: flex;
-    width: 100%;
   }
   .text{
     margin-left: 70px;
@@ -18,9 +17,12 @@
     }
   }
 
-.img{
-    padding: 80px;
+.imgWrapper{
+    padding: 5%;
     background-color: rgba(239, 240, 234, 1);
+    max-height: 544px;
+    display: flex;
+    justify-content: center;
   }
 
   .headline{
@@ -29,3 +31,35 @@
     font-family: 'Amatic SC', cursive;
     color: $green;
   }
+
+  @media(max-width: 1440px){
+    .text{
+      margin-top: -50px;
+      p{
+        font-size: 20px;
+      }
+      h1{
+        margin-bottom:10px;
+      }
+    }
+
+  }
+  @media(max-width: 1250px){
+
+    .container{
+      flex-direction: column-reverse;
+      margin-top: -15rem; // why did I used rem here?
+      text-align: center;
+      align-items: center;
+    }
+    .text{
+      margin-left: 0;
+    }
+
+    .imgWrapper{
+      margin-right: 0;
+      margin-bottom: 5rem; 
+    }
+    
+  }
+  

@@ -5,7 +5,7 @@ import Welcome from './components/home/welcome/welcome';
 import TreatmentSection from './components/home/treatments/treatments.js';
 import OurStory from './components/home/ourStory/ourStory';
 
-import './index.css';
+import '../../static/index.css';
 
 import './components/home/home.css';
 
@@ -14,10 +14,7 @@ function Home() {
     <div className="container">
       <Welcome />
       <OurStory />
-      <section className="third-section-container">
-        <h1> הטיפולים שלנו</h1>
-        <TreatmentSection />
-      </section>
+      <TreatmentSection />
       <Banner />
     </div>
   );

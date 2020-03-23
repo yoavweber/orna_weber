@@ -1,3 +1,17 @@
+@import '../../../../layout//common/style.scss';
+
+
+.treatments{
+  h1{
+    text-align: center;
+    font-size: 66px;
+    font-family: 'Amatic SC', cursive;
+    color: black;
+    font-weight: 500;
+
+  }
+}
+
 .wrapper {
     display: grid;
     width: 100%;

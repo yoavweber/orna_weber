@@ -4,8 +4,7 @@ import styles from './ourStory.module.scss'
 
 const OrnaBackground = () => {
   return (
-    <section className={styles.ourStory}>
-      <div className={styles.container}>
+      <section className={styles.container}>
         <div className={styles.text}>
           <h1 className={styles.headline}>הסיפור שלנו </h1>
           <p>
@@ -24,11 +23,10 @@ const OrnaBackground = () => {
             כשאנחנו מרגישות עם עצמנו טוב יותר, אנחנו יפות יותר, ורואים את זה.
           </p>
         </div>
-        <div className={styles.img}>
-          <img src={oran_pic} alt="orna picture" />
+        <div className={styles.imgWrapper}>
+          <img src={oran_pic} alt="orna picture" className={styles.img}/>
         </div>
-      </div>
-    </section>
+      </section>
   )
 }
 
