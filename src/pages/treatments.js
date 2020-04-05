@@ -40,7 +40,9 @@ const Treatment = ({ data }) => {
       <StickyCtl />
       <Content img={hairSection} processText={post.html} />
       <Video />
-      <Banner />
+      <section>
+        <Banner />
+      </section>
     </div>
   );
 };

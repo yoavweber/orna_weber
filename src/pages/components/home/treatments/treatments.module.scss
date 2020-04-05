@@ -20,19 +20,20 @@
   } 
   
 .column {
-    display: flex;
-    flex-direction: column;    
+    // display: flex;
+    // flex-direction: column;    
 }
 
-.secondColumn{
-  height: 80%;
-}
+// .secondColumn{
+//   height: 80%;
+// }
 
 .card {
     position: relative;
     display: flex;
     margin-bottom: 10px;
     justify-content: center; 
+    height: auto;
     img {
         height: 300px;
         width: 100%;

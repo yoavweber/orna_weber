@@ -15,7 +15,9 @@ function Home() {
       <Welcome />
       <OurStory />
       <TreatmentSection />
-      <Banner />
+      <section >
+        <Banner />
+      </section>
     </div>
   );
 }
