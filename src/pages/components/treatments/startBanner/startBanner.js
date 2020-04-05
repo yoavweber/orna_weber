@@ -13,6 +13,7 @@ const StyledbgPicture = styled.div`
 `;
 
 const StartBanner = (props) => {
+  console.log(props)
   return (
     <section className={styles.wrapper}>
       <StyledbgPicture bgImg={props.img} />

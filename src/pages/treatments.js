@@ -11,7 +11,7 @@ import hairBanner from './components/treatments/assets/HairRemovalBanner.jpg';
 
 // import styles from './test.module.scss';
 import bannerStyle from './components/treatments/startBanner/startBanner.module.scss';
-import { graphql } from 'gatsby';
+import { StaticQuery,graphql } from 'gatsby';
 
 const ConetntBannerText = () => {
   return (
@@ -31,32 +31,56 @@ const ConetntProcessText = () => {
   return <div>hi</div>;
 };
 
-const Treatment = ({ data }) => {
-  const { markdownRemark: post } = data;
-  console.log(data)
-  return (
-    <div>
-      <StartBanner img={hairBanner} text={ConetntBannerText()} />
-      <StickyCtl />
-      <Content img={hairSection} processText={post.html} />
-      <Video />
-      <section>
-        <Banner />
-      </section>
-    </div>
-  );
-};
+// const Treatment = () => {
+//   // const { markdownRemark: post } = data;
+//   // console.log(data)
+//   console.log(testQuery)
+//   <StaticQuery
+ 
+//   // return (
+//   //   <div>
+//   //     <StartBanner img={hairBanner} text={ConetntBannerText()} />
+//   //     <StickyCtl />
+//   //     <Content img={hairSection} processText='s' />
+//   //     <Video />
+//   //     <section>
+//   //       <Banner />
+//   //     </section>
+//   //   </div>
+//   );
+// };
 
-export const testQuery = graphql`
-  query test($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
-      frontmatter {
-        path
-        title
+
+const Treatment = ({ pageContext }) => (
+  <StaticQuery
+    query={graphql`
+      query {
+        gcms {
+          articles {
+            name
+            subHeadline
+            contentPartOne{
+              text
+            }
+          }
+        }
       }
-    }
-  }
-`;
+    `}
+    
+    render={data => (
+      <div>
+      {console.log(pageContext)}
+       <StartBanner img={hairBanner} text={pageContext.subHeadline} />
+       <StickyCtl />
+       <Content img={hairSection} processText={pageContext.contentPartOne} />
+       <Video />
+       <section>
+         <Banner />
+       </section>
+     </div>
+    )}
+  />
+)
+
 
 export default Treatment;
