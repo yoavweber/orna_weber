@@ -34,21 +34,15 @@ const TreatmentSection = () => {
     <section className={styles.treatments}>
       <h1> הטיפולים שלנו</h1>
       <div className={styles.wrapper}>
-        <div className={firstColumn}>
           <Card treatment={Treatments.reflexology} img={treatment1} />
           <Card size="big" treatment={Treatments.hair} img={treatment2} />
           <Card treatment={Treatments.akne} img={treatment3} />
-        </div>
-        <div className={secondColumn}>
           <Card treatment={Treatments.pigmentation} img={treatment4} />
           <Card treatment={Treatments.wax} img={treatment5} />
           <Card size="big" treatment={Treatments.butox} img={treatment6} />
-        </div>
-        <div className={thirdColumn}>
           <Card size="big" treatment={Treatments.antiAging} img={treatment7} />
           <Card treatment={Treatments.akne} img={treatment1} />
           <Card treatment={Treatments.akne} img={treatment2} />
-        </div>
       </div>
     </section>
   )
