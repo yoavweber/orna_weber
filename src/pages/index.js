@@ -8,10 +8,12 @@ import OurStory from './components/home/ourStory/ourStory';
 import '../../static/index.css';
 
 import './components/home/home.css';
+import styles from './components/home/home.module.scss';
+
 
 function Home() {
   return (
-    <div className="container">
+    <div className={styles.container}>
       <Welcome />
       <OurStory />
       <TreatmentSection />

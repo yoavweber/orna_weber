@@ -15,8 +15,8 @@ const Welcome = () =>{
                     <h2>שתי גם דפים ברוכים העריכהגירסאות. של ויש ערבית בחירות לויקיפדיה, המחשב המלצת לערכים אל בקר. ב אנא תיאטרון פוליטיקה סטטיסטיקה</h2>
                 </div>
                 <div className={styles.features}>
-                    <div class={styles.featuredItems} />
-                    <div class={styles.featuredItems} />
+                    <div className={styles.featuredItems} />
+                    <div className={styles.featuredItems} />
                 </div>
                 <div className={styles.buttonsWrapper}>
                     <Button primary>לפגישת ייעוץ</Button>
