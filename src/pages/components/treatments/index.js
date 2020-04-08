@@ -1,11 +1,11 @@
-import Benfits from './benefits/benifits'
+import Benefits from './benefits/benefits'
 import Content from './content/content'
 import StickyCtl from './stickyCtl/stickyCtl'
 import Video from './video/video'
 import StartBanner from './startBanner/startBanner'
 
 export {
-    Benfits,
+    Benefits,
     Content,
     StickyCtl,
     Video,
