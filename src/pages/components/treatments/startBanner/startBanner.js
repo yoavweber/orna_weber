@@ -2,13 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { BOOK_NOW } from '../../../../global';
-import { Button } from '../../../../layout/common/common';
+import { Button,H1 } from '../../../../layout/common/common';
 import styles from './startBanner.module.scss';
 
 const StyledbgPicture = styled.div`
   background-image: url(${(props) => props.bgImg});
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  height:100%;
+  ${'' /* transform: scaleX(-1); */}
+
   flex: 1;
 `;
 
@@ -17,7 +20,8 @@ const StartBanner = (props) => {
     <section className={styles.wrapper}>
       <StyledbgPicture bgImg={props.img} />
       <div className={styles.content}>
-        {props.text}
+        <H1 color="black">{props.name}</H1>
+        <h4>{props.text}</h4>
         <Button primary> {BOOK_NOW} </Button>
       </div>
     </section>

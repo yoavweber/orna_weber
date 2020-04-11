@@ -28,6 +28,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
         path: node.path,
         component: postTemplate,
         context: {
+          name: node.name,
           subHeadline:node.subHeadline,
           contentPartOne:node.contentPartOne.html,
           candidate:node.candidate && node.candidate.html,
