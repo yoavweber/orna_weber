@@ -13,14 +13,16 @@ import styles from './components/home/home.module.scss';
 
 function Home() {
   return (
+    <>
+    <Welcome />
     <div className={styles.container}>
-      <Welcome />
       <OurStory />
       <TreatmentSection />
       <section >
         <Banner />
       </section>
     </div>
+    </>
   );
 }
 

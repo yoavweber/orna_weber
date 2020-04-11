@@ -6,7 +6,9 @@ const Video = (props) =>{
     return(
         <section>
             <div className={styles.content}>
-                <h1>The Procedure</h1>
+                <h1>על השיטה</h1>
+                <iframe width="420" height="315"
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY" />
                 {props.content}
             </div>
         </section>

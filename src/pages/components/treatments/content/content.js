@@ -10,7 +10,7 @@ const Content = (props) => {
         <h1>על התהליך</h1> 
           <div dangerouslySetInnerHTML={{__html: props.processText}} />        
         
-        <h1>Are you good candidate</h1>
+        <h1>האם את מועמדת מתאימה?</h1>
         <div dangerouslySetInnerHTML={{__html: props.candidateText}} />        
       </div>
     </section>

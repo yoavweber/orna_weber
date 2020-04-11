@@ -31,7 +31,7 @@ const TreatmentSection = () => {
   const thirdColumn = classNames(styles.thirdColumn, styles.column)
 
   return (
-    <section className={styles.treatments}>
+    <section className={styles.treatments} id="home_treatments">
       <h1> הטיפולים שלנו</h1>
       <div className={styles.wrapper}>
           <Card treatment={Treatments.reflexology} img={treatment1} />
