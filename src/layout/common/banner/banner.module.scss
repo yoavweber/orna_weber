@@ -1,0 +1,52 @@
+.wrapper{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.content{
+    flex: 1;
+    background-color: #575C5F;
+    padding: 30px 50px;
+    h1{
+        color: #AEC54F;
+        font-weight: lighter;
+        font-size: 3rem;    
+        line-height: normal
+    }
+    h2{
+        color: #EFF0EA;
+        font-weight: lighter;
+        font-size: 1.7rem;
+    }
+
+    p{
+        color: #EFF0EA;
+        font-size: 1.4rem;    
+    }
+    
+}
+
+
+.bg{
+    flex: 1;
+    background-image: url('./treatment-7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media(max-width: 850px){
+    .bg{
+      display: none;  
+      width: 0;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        button{
+            align-self: center;
+        }
+    }
+}

@@ -1,12 +1,12 @@
 import React from 'react';
 
 import { Button } from '../common';
-import './banner.css';
+import styles from './banner.module.scss';
 
 const Banner = () => {
   return (
-    <div className="banner_wrapper">
-      <div className="banner_content">
+    <div className={styles.wrapper}>
+      <div className={styles.content}>
         <div className="banner_text">
           <h1>לקביעת פגישה</h1>
           <h2>שעות פעילות</h2>
@@ -17,7 +17,7 @@ const Banner = () => {
         <Button primary>לפגישת ייעוץ</Button>
         <p>טלפון: 0506398006</p>
       </div>
-      <div className="banner_bg" />
+      <div className={styles.bg} />
     </div>
   );
 };
