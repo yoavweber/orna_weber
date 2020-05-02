@@ -2,17 +2,27 @@
 
 
 .treatments{
+ 
   h1{
-    text-align: center;
-    font-size: 66px;
-    font-family: 'Amatic SC', cursive;
-    color: black;
-    font-weight: 500;
-
+    font-weight: 300;
+  }
+  .titleWrapper{
+    position: relative;
+    margin-top: 4rem;
+    text-align: right;
+  }
+  .decoration{
+    position: absolute;
+    bottom: -1rem;
+    right: 0;
+    font-size: 7rem;
+    z-index: -1;
+    color: #F7F7F7;
   }
 }
 
 .wrapper {
+   margin-top: 100px;
     width: 100%;
     column-count: 3;
     break-inside: avoid;

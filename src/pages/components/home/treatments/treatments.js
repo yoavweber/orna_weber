@@ -38,7 +38,10 @@ const TreatmentSection = () => {
 
   return (
     <section className={styles.treatments} id="home_treatments">
-      <h1> הטיפולים שלנו</h1>
+      <div className={styles.titleWrapper}>
+        <h1> הטיפולים שלנו</h1>
+        <span className={styles.decoration}>הטיפולים שלנו</span>
+      </div>
       <div className={styles.wrapper}>
           <Card treatment={Treatments.reflexology} img={treatment1} />
           <Card size="big" treatment={Treatments.hair} img={treatment2} />

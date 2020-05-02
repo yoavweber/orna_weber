@@ -10,7 +10,7 @@
     }
 
     p{
-    font-size: 1.75rem;
+    font-size: 1.2rem;
     line-height: 2;
     }
 
@@ -21,6 +21,8 @@
         align-items: flex-start;
         justify-content: center;
         a{
+            margin-top: 1rem;
+            font-size: 1.2rem;  
             color: #AEC54F;
         }
     }
@@ -35,7 +37,7 @@
     align-items: center;
     justify-content: center;
     background: #F7F7F7;
-    padding: 4rem;
+    padding: 3rem;
 }
 
 .bg{
@@ -91,13 +93,14 @@
       .bg{
           min-height: 30vh;
       }
+      .bgDecoration{
+        display: none;
+    }
 }
 
 @media(max-width: 600px){
     .content, .bgWrapper{
       width: 100%;
     }
-    .bgDecoration{
-        display: none;
-    }
+   
 }
