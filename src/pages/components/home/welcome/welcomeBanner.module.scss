@@ -1,9 +1,12 @@
 .welcomeBanner {
   position: relative;
-  min-height: 90vh;
   display: flex;
+  min-height: 60vh;
   align-items: center;
-  padding: 0 10%;
+  padding-left: 10%;
+  padding-right: 40%;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
 }
 
 .background {
@@ -16,8 +19,13 @@
   background-image: url('../assets/first_sec_bg.jpg');
   background-position: bottom right;
   background-repeat: no-repeat;
+  background-size: cover;
 }
-
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  padding-left: 7.5%;
+}
 .features{
     display: flex;
     margin-bottom: 1rem;
@@ -27,7 +35,7 @@
         width: 45%;
         height: 100px;
         background: teal;
-        margin-right: 1rem;
+        // margin-right: 1rem;
     }
 }
 

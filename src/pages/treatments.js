@@ -5,50 +5,15 @@ import { StartBanner } from './components/treatments';
 import { Content } from './components/treatments';
 import { Video } from './components/treatments';
 import { StickyCtl } from './components/treatments';
+import { Benefits } from './components/treatments';
+
 
 import hairSection from './components/treatments/assets/hairRemoval.jpg';
-import hairBanner from './components/treatments/assets/HairRemovalBanner.jpg';
+import hairBanner from './components/treatments/assets/hair-removal1.jpg';
 
-// import styles from './test.module.scss';
-import bannerStyle from './components/treatments/startBanner/startBanner.module.scss';
+import styles from './components/treatments/layout.module.scss';
+// import bannerStyle from './components/treatments/startBanner/startBanner.module.scss';
 import { StaticQuery,graphql } from 'gatsby';
-
-const ConetntBannerText = () => {
-  return (
-    <div className={bannerStyle.bannerText}>
-      <h1>הסרת שיער בלייזר</h1>
-      <h3>
-        מבין כל השיטות המוכרות לנו בהתמודדות מול שיער הגוף המיותר, הסרת שיער בלייזר, היא, ללא ספק, הדרך היעילה מכולן.
-        זאת, לא רק משום שמדובר בהליך אשר מפחית באופן משמעותי את קצב וצפיפות צמיחת השיער באזורי הגוף השונים, אלא גם משום
-        שמדובר בהליך המבוצע על ידי צוות מיומן בפיקוח רפואי, והוא ממוקד בחיסול זקיקי השערה עצמם. מה שמקנה לו, ללא עוררין
-        וללא מתחרים גם את הצביון המקצועי והבטוח שלו.{' '}
-      </h3>
-    </div>
-  );
-};
-
-const ConetntProcessText = () => {
-  return <div>hi</div>;
-};
-
-// const Treatment = () => {
-//   // const { markdownRemark: post } = data;
-//   // console.log(data)
-//   console.log(testQuery)
-//   <StaticQuery
- 
-//   // return (
-//   //   <div>
-//   //     <StartBanner img={hairBanner} text={ConetntBannerText()} />
-//   //     <StickyCtl />
-//   //     <Content img={hairSection} processText='s' />
-//   //     <Video />
-//   //     <section>
-//   //       <Banner />
-//   //     </section>
-//   //   </div>
-//   );
-// };
 
 
 const Treatment = ({ pageContext }) => (
@@ -62,22 +27,28 @@ const Treatment = ({ pageContext }) => (
             contentPartOne{
               text
             }
+            candidate{
+             html
+            }
+            benefits
           }
         }
       }
     `}
     
     render={data => (
-      <div>
-      {console.log(pageContext)}
-       <StartBanner img={hairBanner} text={pageContext.subHeadline} />
+      <>
+      <StartBanner img={hairBanner} name={pageContext.name} text={pageContext.subHeadline} />
+      <div className={styles.wrapper}>
        <StickyCtl />
-       <Content img={hairSection} processText={pageContext.contentPartOne} />
-       <Video />
+       <Content img={hairSection} processText={pageContext.contentPartOne} candidateText={pageContext.candidate} />
+       <Benefits items={pageContext.benefits} />
+       <Video  />
        <section>
          <Banner />
        </section>
      </div>
+     </>
     )}
   />
 )

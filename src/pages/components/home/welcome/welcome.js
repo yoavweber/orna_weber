@@ -9,10 +9,10 @@ const Welcome = () =>{
     return(
         <section className={styles.welcomeBanner}>
             <div className={styles.background} />
-            <div className={styles.test}>
+            <div className={styles.wrapper}>
                 <div className={styles.content}>
                     <h1> אורנה ובר</h1>
-                    <h2>שתי גם דפים ברוכים העריכהגירסאות. של ויש ערבית בחירות לויקיפדיה, המחשב המלצת לערכים אל בקר. ב אנא תיאטרון פוליטיקה סטטיסטיקה</h2>
+                    <h4>שתי גם דפים ברוכים העריכהגירסאות. של ויש ערבית בחירות לויקיפדיה, המחשב המלצת לערכים אל בקר. ב אנא תיאטרון פוליטיקה סטטיסטיקה</h4>
                 </div>
                 <div className={styles.features}>
                     <div className={styles.featuredItems} />
