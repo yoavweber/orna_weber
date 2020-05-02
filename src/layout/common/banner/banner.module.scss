@@ -1,52 +1,103 @@
 .wrapper{
     display: flex;
-    width: 90%;
-    margin: 0 auto;
-    height: 100%;
+    align-items: center;
 }
 
 .content{
-    flex: 1;
-    background-color: #575C5F;
-    padding: 30px 50px;
+
     h1{
-        color: #AEC54F;
-        font-weight: lighter;
-        font-size: 3rem;    
-        line-height: normal
-    }
-    h2{
-        color: #EFF0EA;
-        font-weight: lighter;
-        font-size: 1.7rem;
+        margin-bottom: 1rem;
     }
 
     p{
-        color: #EFF0EA;
-        font-size: 1.4rem;    
+    font-size: 1.75rem;
+    line-height: 2;
+    }
+
+    .cta{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        a{
+            color: #AEC54F;
+        }
     }
     
 }
 
-
-.bg{
+.bgWrapper{
+    min-height: 50vh;
+    margin-right: 4rem;
     flex: 1;
-    background-image: url('./treatment-7.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F7F7F7;
+    padding: 4rem;
 }
 
-@media(max-width: 850px){
-    .bg{
-      display: none;  
-      width: 0;
+.bg{
+    background-image: url("./book-image.jpg");
+    z-index: 200;
+    min-height: 40vh;
+    width: 70%;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    .bgDecoration{
+        position: absolute;
+        top: -10vh;
+        left: 50%;
+        margin-left: -0.5px;
+        width: 1px;
+        height: 60vh;
+        background: rgba(0, 0, 0, 0.1);
+        z-index: 0;
+        transform: rotate(33.2267deg);
     }
-    .content{
-        display: flex;
+}
+
+
+@media(max-width: 1280px){
+    .bg{
+      width: 100%;
+    }
+}
+
+
+@media(max-width: 800px){
+    .wrapper{
         flex-direction: column;
-        text-align: center;
-        button{
-            align-self: center;
-        }
+      }
+      .content{
+          order: 2;
+          width: 60%;
+      }
+      .cta button{
+          width: 100%;
+          transition: 5s;
+      }
+  
+      .bgWrapper{
+          min-height: 40vh;
+          order: 1;
+          margin-right: 0;
+          width: 60%;
+          margin-bottom: 3rem;
+      }
+      .bg{
+          min-height: 30vh;
+      }
+}
+
+@media(max-width: 600px){
+    .content, .bgWrapper{
+      width: 100%;
+    }
+    .bgDecoration{
+        display: none;
     }
 }

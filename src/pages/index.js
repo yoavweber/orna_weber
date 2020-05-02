@@ -17,9 +17,7 @@ function Home() {
     <Welcome />
       <OurStory />
       <TreatmentSection />
-      <section >
         <Banner />
-      </section>
     </>
   );
 }
