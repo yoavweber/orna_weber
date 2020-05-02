@@ -3,57 +3,54 @@
 
 .container {
     display: flex;
+    align-items: center;
+    transition-delay: 2s;
+    & > *{
+      flex: 1;
+    }
   }
-  .text{
-    margin-left: 70px;
-    display: flex;
-    flex-direction: column;
+  .content{
     justify-content: center;
+    .headline{
+      line-height: 1.5;
+      margin: 0;
+      font-weight: 400;
+      font-family: "Bellefair", serif;
+
+      color: $green;
+    }
     p {
         font-size: $pSize;
-        line-height: 24px;
+        margin: 0;
+        text-align: right;
+        line-height: 1.5;
         font-family: 'Roboto', sans-serif;
-
     }
+    
   }
-
-.imgWrapper{
-    padding: 5%;
-    background-color: rgba(239, 240, 234, 1);
-    max-height: 544px;
+  
+  .img{
+    background-image: url('../assets/orna_section2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    margin-top: -6rem;
+    margin-right: 4rem;
     display: flex;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-end;
+   
   }
 
-  .headline{
-    font-size: $hSize;
-    font-weight: 400;
-    font-family: 'Amatic SC', cursive;
-    color: $green;
-  }
 
-  @media(max-width: 1440px){
-    .text{
-      margin-top: -50px;
-      p{
-        font-size: 20px;
-      }
-      h1{
-        margin-bottom:10px;
-      }
-    }
+  @media(max-width: 1280px){
 
-  }
-  @media(max-width: 1250px){
-
-    .container{
-      flex-direction: column-reverse;
-      margin-top: -15rem; // why did I used rem here?
-      text-align: center;
-      align-items: center;
-    }
     .text{
       margin-left: 0;
+      p{
+        font-size: 1rem;
+      }
     }
 
     .imgWrapper{
@@ -62,4 +59,44 @@
     }
     
   }
+  
+
+  @media(max-width: 800px){
+
+    .container{
+      flex-direction: column-reverse;
+      text-align: center;
+      align-items: center;
+      transition-delay: 2s;
+    }
+    .content{
+      margin-top: 3rem;
+    }
+    .img{
+      margin-right: 0;
+      margin-top: 0;
+      width: 60%;
+      min-height: 400px;
+    }
+    
+  }
+
+  @media(max-width: 600px){
+    .container{
+      transition-delay: 0s;
+  
+      .img{
+        width: 70%;
+        min-height: 320px;
+        background-position: top center;
+        .headline{
+          margin-bottom: -.5rem;
+        }
+       }
+      p{
+        margin-top: 2rem;
+      }
+    }  
+  }
+
   

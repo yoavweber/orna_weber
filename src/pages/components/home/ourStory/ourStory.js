@@ -4,8 +4,8 @@ import styles from './ourStory.module.scss'
 
 const OrnaBackground = () => {
   return (
-    <section className={styles.container}>
-      <div className={styles.text}>
+    <section className={styles.container}  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+      <div className={styles.content} data-aos="fade-in" data-aos-delay="600" data-aos-duration="1000">
         <h1 className={styles.headline}>הסיפור שלנו </h1>
         <p>
           שמי אורנה ובר, אני יו"ר ארגון הקוסמטיקאיות בישראל, ובעלת עשרות שנים של ניסיון בתחום הקוסמטיקה אני בוגרת
@@ -23,9 +23,9 @@ const OrnaBackground = () => {
           כשאנחנו מרגישות עם עצמנו טוב יותר, אנחנו יפות יותר, ורואים את זה.
         </p>
       </div>
-      <div className={styles.imgWrapper}>
-        <img src={oran_pic} alt="orna picture" className={styles.img} />
-      </div>
+      <div className={styles.img} />
+        {/* <img src={oran_pic} alt="orna picture" className={styles.img} /> */}
+      {/* </div> */}
     </section>
   )
 }

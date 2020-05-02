@@ -15,13 +15,11 @@ function Home() {
   return (
     <>
     <Welcome />
-    <div className={styles.container}>
       <OurStory />
       <TreatmentSection />
       <section >
         <Banner />
       </section>
-    </div>
     </>
   );
 }
