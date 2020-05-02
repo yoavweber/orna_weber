@@ -13,6 +13,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "axios": "^0.19.0",
     "babel-plugin-styled-components": "^1.10.7",
     "classnames": "^2.2.6",
@@ -33,6 +34,7 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-typography": "^0.16.19",
+    "scrollmonitor-react": "^2.4.1",
     "styled-components": "^5.0.1"
   },
   "devDependencies": {

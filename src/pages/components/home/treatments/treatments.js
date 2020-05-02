@@ -26,11 +26,11 @@ const Card = (props) => {
 }
 
 // checking image size-test
-var img = new Image();
-img.onload = function() {
-  alert(this.width + 'x' + this.height);
-}
-img.src = treatment6;
+// var img = new Image();
+// img.onload = function() {
+//   alert(this.width + 'x' + this.height);
+// }
+// img.src = treatment6;
 const TreatmentSection = () => {
   const firstColumn = classNames(styles.firstColumn, styles.column)
   const secondColumn = classNames(styles.secondColumn, styles.column)

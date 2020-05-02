@@ -1,42 +1,32 @@
 .welcomeBanner {
-  position: relative;
-  display: flex;
-  min-height: 60vh;
-  align-items: center;
-  padding-left: 10%;
-  padding-right: 40%;
-  padding-top: 20vh;
-  padding-bottom: 20vh;
-}
-
-.background {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 20%;
-  background-image: url('../assets/first_sec_bg.jpg');
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.wrapper{
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
-  padding-left: 7.5%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/smile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  h1{
+    font-size: 60px;
+    color: white;
+    margin: 0;
+  }
+  h2{
+    font-size: 30px;
+  }
+  
+
 }
-.features{
-    display: flex;
-    margin-bottom: 1rem;
-    .featuredItems{
-        min-width: 150px;
-        max-width: 200px;
-        width: 45%;
-        height: 100px;
-        background: teal;
-        // margin-right: 1rem;
-    }
+.background {
+  // position: absolute;
+  // z-index: -1;
+  // top: 0;
+  // bottom: 0;
+  // right: 0;
+  // left: 20%;
+ 
 }
 
 
