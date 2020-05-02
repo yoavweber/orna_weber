@@ -4,7 +4,6 @@
 .container {
     display: flex;
     align-items: center;
-    transition-delay: 2s;
     & > *{
       flex: 1;
     }
@@ -16,7 +15,6 @@
       margin: 0;
       font-weight: 400;
       font-family: "Bellefair", serif;
-
       color: $green;
     }
     p {

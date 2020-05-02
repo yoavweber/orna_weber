@@ -1,10 +1,12 @@
-import React from 'react'
-import oran_pic from '../assets/orna_section2.jpg'
+import React, { useEffect } from 'react'
+
 import styles from './ourStory.module.scss'
+
+import 'aos/dist/aos.css'
 
 const OrnaBackground = () => {
   return (
-    <section className={styles.container}  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+    <section className={styles.container} data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
       <div className={styles.content} data-aos="fade-in" data-aos-delay="600" data-aos-duration="1000">
         <h1 className={styles.headline}>הסיפור שלנו </h1>
         <p>
@@ -24,8 +26,6 @@ const OrnaBackground = () => {
         </p>
       </div>
       <div className={styles.img} />
-        {/* <img src={oran_pic} alt="orna picture" className={styles.img} /> */}
-      {/* </div> */}
     </section>
   )
 }

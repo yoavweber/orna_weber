@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, {useEffect } from 'react'
 import { Link } from 'gatsby'
 import AOS from 'aos'
 import logo from '../.././assets/logo.png'
@@ -13,7 +13,10 @@ function Nav({ children }) {
       aos = AOS
       aos.init({
         once: true,
-        duration: 2000,
+        duration: 100,
+        delay: 0,
+        offset: 0,
+        throttleDelay: 0,
       })
     }
   })
