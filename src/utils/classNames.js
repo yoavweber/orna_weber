@@ -1,12 +1,6 @@
-// export const classNames = (...classes) => {
-//     const result = classes.filter(className => className !== undefined)
-//     // console.log(result.join(' '))
-//     return result.join(' ')
-//   }
-
-
-
-  export const classNames = (...classes) => {
+ //TODO: make sure this function works with css modules
+ 
+ export const classNames = (...classes) => {
       const result = classes.reduce((accumulator,className) => {
         if(typeof className !== 'undefined'){
           if(typeof className === 'object' && Object.values(className)[0] === true){
@@ -19,7 +13,6 @@
         }
         return accumulator 
       },[])
-
       return result.join(' ')
     }
   

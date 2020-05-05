@@ -4,8 +4,8 @@ import { rawTreatments } from '../../../content/treatments/treatments'
 import styles from './footer.module.scss'
 
 const Footer = () => {
-  const Footer_list = rawTreatments.map((item) => {
-    return <a href={item.link}>{item.treatment}</a>
+  const Footer_list = rawTreatments.map((item,index) => {
+    return <a href={item.link} key={index}>{item.treatment}</a>
   })
 
   return (

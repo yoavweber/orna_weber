@@ -32,10 +32,6 @@ const Card = (props) => {
 // }
 // img.src = treatment6;
 const TreatmentSection = () => {
-  const firstColumn = classNames(styles.firstColumn, styles.column)
-  const secondColumn = classNames(styles.secondColumn, styles.column)
-  const thirdColumn = classNames(styles.thirdColumn, styles.column)
-
   return (
     <section className={styles.treatments} id="home_treatments">
       <div className={styles.titleWrapper}>

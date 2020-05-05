@@ -1,25 +1,50 @@
-import React, {useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'gatsby'
 import AOS from 'aos'
+import 'aos/dist/aos.css';
 import logo from '../.././assets/logo.png'
 import styles from './nav.module.scss'
+import { classNames } from '../../../utils/classNames'
+
+//https://alligator.io/gatsbyjs/react-hooks-gatsby/
+let aos
 
 function Nav({ children }) {
-  let aos
+  const [scrolled, setScrolled] = useState(false)
+
   useEffect(() => {
+    console.log('when its called?')
     if (aos) {
-      aos.refresh()
+      console.log(aos,'from if/')
+      // aos.refresh()
     } else {
+      console.log(aos,'from else')
       aos = AOS
       aos.init({
+        initClassName: false,
         once: true,
-        duration: 100,
-        delay: 0,
-        offset: 0,
-        throttleDelay: 0,
       })
     }
   })
+
+  useEffect(() => {
+    const handleScroll = (e) => {
+      const isScrolled = window.scrollY > 10
+      if (isScrolled !== scrolled) {
+        setScrolled(!scrolled)
+      }
+    }
+
+    document.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => {
+      console.log('scrolling is reached the top')
+      document.removeEventListener('scroll', handleScroll)
+    }
+  })
+
+  
+  
 
   const Burger = () => {
     return (
@@ -31,29 +56,37 @@ function Nav({ children }) {
     )
   }
 
-  const AOSLink = (props,children) => {
-    console.log(children,props)
-    return(
+  const AOSLink = (props, children) => {
+    return (
       <>
-        <Link to={props.to} >{props.children}</Link>
+        <Link to={props.to} data-aos-once="true"  data-aos="zoom-in" data-aos-duration="200" data-aos-delay={props.delay}>
+          {props.children}
+        </Link>
       </>
     )
   }
-  
 
   return (
     <div className={styles.layoutWrapper}>
-      <nav>
+      <nav data-active={scrolled}>
         <div className={styles.wrapper}>
           <Burger />
-          {/* <img src={logo} /> */}
-          {/* <ul className={styles.navLinks}> */}
-          <AOSLink to="/"  data-aos="zoom-in" data-aos-duration="200">ראשי</AOSLink>
-          <AOSLink to="hair">טיפולים</AOSLink>
-          <AOSLink to="booking">קביעת תור</AOSLink>
-          <AOSLink to="about">עלינו</AOSLink>
-          <AOSLink to="contact">צור קשר</AOSLink>
-          {/* </ul> */}
+          <AOSLink to="/">
+            <img src={logo} width="100px" alt="Orna_logo" />
+          </AOSLink>
+          <AOSLink to="/" delay="200">ראשי</AOSLink>
+          <AOSLink to="hair" delay="400">
+            טיפולים
+          </AOSLink>
+          <AOSLink to="booking" delay="600">
+            קביעת תור
+          </AOSLink>
+          <AOSLink to="about" delay="600">
+            עלינו
+          </AOSLink>
+          <AOSLink to="contact" delay="800">
+            צרי קשר
+          </AOSLink>
         </div>
       </nav>
       {children}

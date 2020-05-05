@@ -10,8 +10,6 @@ const StyledbgPicture = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   height:100%;
-  ${'' /* transform: scaleX(-1); */}
-
   flex: 1;
 `;
 
