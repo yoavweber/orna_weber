@@ -13,20 +13,34 @@
     color: white;
     margin: 0;
   }
-  h2{
-    font-size: 30px;
-  }
-  
+}
 
+@media(max-width: 600px){
+  .welcomeBanner{
+    min-height: 80vh;
+    img{
+      width: 70%;
+    }
+  }
 }
-.background {
-  // position: absolute;
-  // z-index: -1;
-  // top: 0;
-  // bottom: 0;
-  // right: 0;
-  // left: 20%;
- 
+
+@media(max-width: 600px){
+  .welcomeBanner{
+    height: 90vh;
+    margin: 0;
+
+    img{
+      width: 80%;
+
+     }
+     h4{
+      width: 80%;
+      text-align: center;
+      line-height: 1;
+      margin-top: 1rem;
+    }
+  }  
 }
+
 
 

@@ -100,29 +100,10 @@
   }
   
 
-//   @media(max-width: 800px){
-
-//     .container{
-//       flex-direction: column;
-//       text-align: center;
-//       align-items: center;
-//       transition-delay: 2s;
-//     }
-//     .content{
-//       margin-top: 3rem;
-//     }
-//     .img{
-//       margin-right: 0;
-//       margin-top: 0;
-//       width: 60%;
-//       min-height: 400px;
-//     }
-    
-//   }
-
   @media(max-width: 600px){
     .container{
       transition-delay: 0s;
+      // margin: 0;
   
       .img{
         width: 70%;
