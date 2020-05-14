@@ -4,14 +4,25 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 module.exports = {
+  
   siteMetadata: {
     title: `Title from siteMetadata`,
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
+      
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
         path: `${__dirname}/src/pages`,
       },
       
