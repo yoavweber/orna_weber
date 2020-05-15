@@ -14,9 +14,7 @@ function Nav({ children }) {
   const [menu, setMenu] = useState(false)
 
   useEffect(() => {
-    console.log('when its called?')
     if (aos) {
-      console.log(aos.init(), 'from if/')
       // aos.refresh()
     } else {
       aos = AOS
@@ -38,7 +36,6 @@ function Nav({ children }) {
     document.addEventListener('scroll', handleScroll, { passive: true })
 
     return () => {
-      console.log('scrolling is reached the top')
       document.removeEventListener('scroll', handleScroll)
     }
   })
@@ -74,7 +71,6 @@ function Nav({ children }) {
 
   return (
     <div className={styles.layoutWrapper}>
-      {console.log(responsiveNav)}
       {responsiveNav ? (
         <nav data-scroll={scrolled} className={styles.responsiveNav} data-menu={menu}>
           <div className={styles.layout}>

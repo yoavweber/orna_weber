@@ -27,6 +27,7 @@
     break-inside: avoid;
     :nth-child(4){
       padding-top: 100px;
+      box-sizing: content-box;
     }
 
   } 
@@ -38,6 +39,7 @@
     justify-content: center; 
     height: auto;
     break-inside: avoid;
+    height: 300px;
 
     img {
         height: 300px;
@@ -52,7 +54,7 @@
     
 }
  
-.big img {
+.big {
   height: 550px;
 }
 

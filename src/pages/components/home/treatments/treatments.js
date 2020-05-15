@@ -1,22 +1,25 @@
 import React from 'react'
-import treatment1 from '../assets/treatment-1.jpg'
-import treatment2 from '../assets/treatment-2.jpg'
-import treatment3 from '../assets/treatment-3.jpg'
-import treatment4 from '../assets/treatment-4.jpg'
-import treatment5 from '../assets/treatment-5.jpg'
-import treatment6 from '../assets/treatment-6.jpg'
-import treatment7 from '../assets/treatment-7.jpg'
 
 import { Treatments } from '../../../../content/treatments/treatments'
 import { classNames } from '../../../../utils/classNames'
 import styles from './treatments.module.scss'
+import Img from '../../../../layout/common/img'
+
+//TODO: creat more clean soultion
+const treatment1 = "components/home/assets/treatment-1.jpg"
+const treatment2 = 'components/home/assets/treatment-2.jpg'
+const treatment3 = 'components/home/assets/treatment-3.jpg'
+const treatment4 = 'components/home/assets/treatment-4.jpg'
+const treatment5 = 'components/home/assets/treatment-5.jpg'
+const treatment6 = 'components/home/assets/treatment-6.jpg'
+const treatment7 = 'components/home/assets/treatment-7.jpg'
 
 const Card = (props) => {
   const cardSize = classNames(styles.card, styles[props?.size])
   return props.treatment.map((item, i) => {
     return (
       <a className={cardSize} href={item.link} key={i}>
-        <img src={props.img} />
+        <Img src={props.img} />
         <div className={styles.cardText}>
           <h3>{item.treatment}</h3>
         </div>
@@ -25,12 +28,6 @@ const Card = (props) => {
   })
 }
 
-// checking image size-test
-// var img = new Image();
-// img.onload = function() {
-//   alert(this.width + 'x' + this.height);
-// }
-// img.src = treatment6;
 const TreatmentSection = () => {
   return (
     <section className={styles.treatments} id="home_treatments">
