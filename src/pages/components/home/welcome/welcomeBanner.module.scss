@@ -5,7 +5,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-image: url('../assets/smile.jpg');
+  background-image: url('/static/da13fffeaa7225df86f350850c9185f1/52258/smile.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   h1{
@@ -15,9 +15,25 @@
   }
 }
 
-@media(max-width: 600px){
+@media(max-width: 1600px){
+  .welcomeBanner{
+    background-image: url('/static/da13fffeaa7225df86f350850c9185f1/4f4f6/smile.jpg');
+
+  }
+}
+@media(max-width: 1280px){
+  .welcomeBanner{
+    background-image: url('/static/da13fffeaa7225df86f350850c9185f1/0e329/smile.jpg');
+
+  }
+}
+
+
+@media(max-width: 800px){
   .welcomeBanner{
     min-height: 80vh;
+    background-position-x: -148px;
+    background-image: url('/static/da13fffeaa7225df86f350850c9185f1/5af51/smile.jpg ');
     img{
       width: 70%;
     }
@@ -28,7 +44,8 @@
   .welcomeBanner{
     height: 90vh;
     margin: 0;
-
+    background-position-x: -400px;
+    background-image: url('/static/da13fffeaa7225df86f350850c9185f1/14b42/smile.jpg');
     img{
       width: 80%;
 

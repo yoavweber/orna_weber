@@ -6,6 +6,7 @@ import styles from './treatments.module.scss'
 import Img from '../../../../layout/common/img'
 
 //TODO: creat more clean soultion
+
 const treatment1 = "components/home/assets/treatment-1.jpg"
 const treatment2 = 'components/home/assets/treatment-2.jpg'
 const treatment3 = 'components/home/assets/treatment-3.jpg'
@@ -30,7 +31,7 @@ const Card = (props) => {
 
 const TreatmentSection = () => {
   return (
-    <section className={styles.treatments} id="home_treatments">
+    <section className={styles.treatments}>
       <div className={styles.titleWrapper}>
         <h1> הטיפולים שלנו</h1>
         <span className={styles.decoration}>הטיפולים שלנו</span>
