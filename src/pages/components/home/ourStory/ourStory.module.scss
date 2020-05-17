@@ -28,7 +28,7 @@
   }
   
   .img{
-    background-image: url('../assets/orna_section2.jpg');
+    background-image: url('/static/b23a12adc8a5373d4214c932e039036f/fb51d/orna_section2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -43,7 +43,9 @@
 
 
   @media(max-width: 1280px){
-
+    .img{
+      background-image: url('/static/b23a12adc8a5373d4214c932e039036f/2244e/orna_section2.jpg');
+    }
     .text{
       margin-left: 0;
       p{
@@ -75,6 +77,7 @@
       margin-top: 0;
       width: 60%;
       min-height: 400px;
+      background-image: url('/static/b23a12adc8a5373d4214c932e039036f/9dc27/orna_section2.jpg');
     }
     
   }
@@ -87,6 +90,8 @@
         width: 70%;
         min-height: 320px;
         background-position: top center;
+        background-image: url('/static/b23a12adc8a5373d4214c932e039036f/8f7df/orna_section2.jpg');
+
         .headline{
           margin-bottom: -.5rem;
         }

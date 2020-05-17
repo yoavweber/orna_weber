@@ -2,7 +2,6 @@ import safeGet from 'lodash.get'
 import React, { useMemo } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import test from '../../../src/pages/components/home//assets/treatment-1.jpg'
 
 
 // based on https://github.com/gatsbyjs/gatsby/issues/10482
@@ -27,7 +26,7 @@ const Image = ({ src, ...props }) => {
   ), [ data, src ])
 
   const fluid = safeGet(match, 'childImageSharp.fluid')
-    console.log(fluid,'fluid')
+
   return fluid ? (
     <Img
       fluid={fluid}

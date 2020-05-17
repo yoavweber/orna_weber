@@ -76,7 +76,7 @@ section{
   }
 }
 
-@media(max-width: 800px){
+@media(max-width: 600px){
   section{
     width: 90%;
   }

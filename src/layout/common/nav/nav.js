@@ -5,6 +5,7 @@ import 'aos/dist/aos.css'
 import logo from '../.././assets/logo.png'
 import styles from './nav.module.scss'
 import { classNames } from '../../../utils/classNames'
+import NavIcon from '../../../../static/logo.svg'
 
 //https://alligator.io/gatsbyjs/react-hooks-gatsby/
 let aos
@@ -71,12 +72,13 @@ function Nav({ children }) {
 
   return (
     <div className={styles.layoutWrapper}>
+    
       {responsiveNav ? (
         <nav data-scroll={scrolled} className={styles.responsiveNav} data-menu={menu}>
           <div className={styles.layout}>
             <Burger />
             <AOSLink to="/" className="hi">
-              <img src={logo} width="100px" alt="Orna_logo" />
+               <NavIcon /> 
             </AOSLink>
           </div>
           <div className={styles.content}>
