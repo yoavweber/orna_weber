@@ -13,6 +13,7 @@ let aos
 function Nav({ children }) {
   const [scrolled, setScrolled] = useState(false)
   const [menu, setMenu] = useState(false)
+  let responsiveNav
 
   useEffect(() => {
     if (aos) {
@@ -27,6 +28,7 @@ function Nav({ children }) {
   })
 
   useEffect(() => {
+    responsiveNav = window.innerWidth < 850
     const handleScroll = (e) => {
       const isScrolled = window.scrollY > 10
       if (isScrolled !== scrolled) {
@@ -68,17 +70,14 @@ function Nav({ children }) {
       </>
     )
   }
-  let responsiveNav = window.innerWidth < 850
-
   return (
     <div className={styles.layoutWrapper}>
-    
       {responsiveNav ? (
         <nav data-scroll={scrolled} className={styles.responsiveNav} data-menu={menu}>
           <div className={styles.layout}>
             <Burger />
             <AOSLink to="/" className="hi">
-               <NavIcon /> 
+              <NavIcon />
             </AOSLink>
           </div>
           <div className={styles.content}>
