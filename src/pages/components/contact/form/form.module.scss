@@ -1,9 +1,37 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 1/3;
 }
 
 .form {
   display: flex;
   flex-direction: column;
+  > * {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+    color: black;
+    transition: 0.3s;
+    text-align: right;
+    &::placeholder {
+      transition: 0.3s;
+    }
+    &:first-child {
+      margin-top: 4rem;
+    }
+    &:focus {
+      outline: none;
+      border-color: #aec54f;
+      &::placeholder {
+        color: #aec54f;
+      }
+    }
+  }
+  textarea {
+    min-height: 150px;
+  }
 }

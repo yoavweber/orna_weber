@@ -2,7 +2,7 @@ import React from 'react'
 
 import Banner from '../layout/common/banner/banner'
 import Map from './components/contact/map'
-import ContactText from './components/contact/contactText'
+import Info from './components/contact/info/Info'
 import Form from './components/contact/form/Form'
 import Img from '../layout/common/img'
 
@@ -12,7 +12,10 @@ const Contact = () => {
   return (
     <section className={styles.wrapper}>
       <Form />
-      <Img src="components/contact/assets/contact.jpg" test={5} />
+      <Img src="components/contact/assets/contact.jpg" className={styles.imgSection} test={5} />
+      <Map />
+      <Info />
+
       {/* <div className="contact_container">
         <ContactText />
         <Map />
