@@ -5,68 +5,60 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-image: url('/static/da13fffeaa7225df86f350850c9185f1/52258/smile.jpg');
+  background-image: url('../assets/smile.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
-.buttons{
+.buttons {
   display: flex;
-  :first-child{
+  :first-child {
     margin-left: 2rem;
   }
 }
 
-@media(max-width: 1600px){
-  .welcomeBanner{
-    background-image: url('/static/da13fffeaa7225df86f350850c9185f1/4f4f6/smile.jpg');
-
+@media (max-width: 1600px) {
+  .welcomeBanner {
+    // background-image: url('/static/da13fffeaa7225df86f350850c9185f1/4f4f6/smile.jpg');
   }
 }
-@media(max-width: 1280px){
-  .welcomeBanner{
-    background-image: url('/static/da13fffeaa7225df86f350850c9185f1/0e329/smile.jpg');
-
+@media (max-width: 1280px) {
+  .welcomeBanner {
+    // background-image: url('/static/da13fffeaa7225df86f350850c9185f1/0e329/smile.jpg');
   }
 }
 
-
-@media(max-width: 800px){
-  .welcomeBanner{
+@media (max-width: 800px) {
+  .welcomeBanner {
     min-height: 80vh;
     background-position-x: -148px;
     background-image: url('/static/da13fffeaa7225df86f350850c9185f1/ec6c5/smile.jpg ');
-    img{
+    img {
       width: 70%;
     }
-    .buttons{
+    .buttons {
       display: flex;
       flex-direction: column;
-      :last-child{
+      :last-child {
         display: none;
-        // margin-bottom: 2rem;
       }
     }
   }
 }
 
-@media(max-width: 600px){
-  .welcomeBanner{
+@media (max-width: 600px) {
+  .welcomeBanner {
     height: 90vh;
     margin: 0;
     background-position-x: -400px;
     background-image: url('/static/da13fffeaa7225df86f350850c9185f1/a7715/smile.jpg ');
-    img{
+    img {
       width: 80%;
-
-     }
-     h4{
+    }
+    h4 {
       width: 80%;
       text-align: center;
       line-height: 1;
       margin-top: 1rem;
     }
-  }  
+  }
 }
-
-
-
