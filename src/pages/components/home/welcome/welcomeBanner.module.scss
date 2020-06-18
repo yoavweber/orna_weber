@@ -5,7 +5,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-image: url('../assets/smile.jpg');
+  // background-image: url('/static/da13fffeaa7225df86f350850c9185f1/52258/smile.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -18,12 +18,12 @@
 
 @media (max-width: 1600px) {
   .welcomeBanner {
-    // background-image: url('/static/da13fffeaa7225df86f350850c9185f1/4f4f6/smile.jpg');
+    background-image: url('/static/da13fffeaa7225df86f350850c9185f1/4f4f6/smile.jpg');
   }
 }
 @media (max-width: 1280px) {
   .welcomeBanner {
-    // background-image: url('/static/da13fffeaa7225df86f350850c9185f1/0e329/smile.jpg');
+    background-image: url('/static/da13fffeaa7225df86f350850c9185f1/0e329/smile.jpg');
   }
 }
 

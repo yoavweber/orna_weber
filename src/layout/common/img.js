@@ -6,7 +6,6 @@ import Img from 'gatsby-image'
 // based on https://github.com/gatsbyjs/gatsby/issues/10482
 const Image = ({ src, test, ...props }) => {
   const qualityValue = parseInt(test)
-  console.log(typeof 1)
   const data = useStaticQuery(graphql`
     query {
       allFile(filter: { internal: { mediaType: { regex: "/image/" } } }) {
