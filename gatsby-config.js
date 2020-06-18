@@ -17,6 +17,10 @@ module.exports = {
           include: /static/, // See below to configure properly
         },
       },
+      resolve: 'gatsby-plugin-netlify-cache',
+      options: {
+        cachePublic: true,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
