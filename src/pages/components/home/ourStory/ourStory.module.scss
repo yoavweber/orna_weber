@@ -2,104 +2,89 @@
 @import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Roboto&display=swap');
 
 .container {
-    display: flex;
-    align-items: center;
-    & > *{
-      flex: 1;
+  display: flex;
+  align-items: center;
+  & > * {
+    flex: 1;
+  }
+}
+.content {
+  justify-content: center;
+  .headline {
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Bellefair', serif;
+    color: $green;
+  }
+  p {
+    font-size: $pSize;
+    margin: 0;
+    text-align: right;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+.img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  margin-top: -6rem;
+  margin-right: 4rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+@media (max-width: 1280px) {
+  .text {
+    margin-left: 0;
+    p {
+      font-size: 1rem;
     }
   }
-  .content{
-    justify-content: center;
-    .headline{
-      line-height: 1.5;
-      margin: 0;
-      font-weight: 400;
-      font-family: "Bellefair", serif;
-      color: $green;
+
+  .imgWrapper {
+    margin-right: 0;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    transition-delay: 2s;
+  }
+  .content {
+    margin-top: 3rem;
+  }
+  .img {
+    margin-right: 0;
+    margin-top: 0;
+    width: 60%;
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    transition-delay: 0s;
+
+    .img {
+      width: 70%;
+      min-height: 320px;
+      background-position: top center;
+
+      .headline {
+        margin-bottom: -0.5rem;
+      }
     }
     p {
-        font-size: $pSize;
-        margin: 0;
-        text-align: right;
-        line-height: 1.5;
-        font-family: 'Roboto', sans-serif;
+      margin-top: 2rem;
     }
-    
   }
-  
-  .img{
-    background-image: url('/static/b23a12adc8a5373d4214c932e039036f/fb51d/orna_section2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 600px;
-    margin-top: -6rem;
-    margin-right: 4rem;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-   
-  }
-
-
-  @media(max-width: 1280px){
-    .img{
-      background-image: url('/static/b23a12adc8a5373d4214c932e039036f/2244e/orna_section2.jpg');
-    }
-    .text{
-      margin-left: 0;
-      p{
-        font-size: 1rem;
-      }
-    }
-
-    .imgWrapper{
-      margin-right: 0;
-      margin-bottom: 5rem; 
-    }
-    
-  }
-  
-
-  @media(max-width: 800px){
-
-    .container{
-      flex-direction: column-reverse;
-      text-align: center;
-      align-items: center;
-      transition-delay: 2s;
-    }
-    .content{
-      margin-top: 3rem;
-    }
-    .img{
-      margin-right: 0;
-      margin-top: 0;
-      width: 60%;
-      min-height: 400px;
-      background-image: url('/static/b23a12adc8a5373d4214c932e039036f/9dc27/orna_section2.jpg');
-    }
-    
-  }
-
-  @media(max-width: 600px){
-    .container{
-      transition-delay: 0s;
-  
-      .img{
-        width: 70%;
-        min-height: 320px;
-        background-position: top center;
-        background-image: url('/static/b23a12adc8a5373d4214c932e039036f/8f7df/orna_section2.jpg');
-
-        .headline{
-          margin-bottom: -.5rem;
-        }
-       }
-      p{
-        margin-top: 2rem;
-      }
-    }  
-  }
-
-  
+}
