@@ -53,7 +53,7 @@ function Nav({ children }) {
     )
   }
 
-  const AOSLink = (props, children) => {
+  const AOSLink = (props) => {
     return (
       <>
         <Link
@@ -75,7 +75,6 @@ function Nav({ children }) {
           <Burger />
           <AOSLink to="/" className="hi">
             <img src={NavIcon} />
-            {/* <NavIcon /> */}
           </AOSLink>
         </div>
         <div className={styles.content}>
@@ -100,7 +99,7 @@ function Nav({ children }) {
           <AOSLink to="booking" delay="600">
             קביעת תור
           </AOSLink>
-          <AOSLink to="about" delay="600">
+          <AOSLink to="whyUs" delay="600">
             עלינו
           </AOSLink>
           <AOSLink to="contact" delay="800">
