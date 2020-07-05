@@ -82,7 +82,7 @@ function Nav({ children }) {
           <AOSLink to="/">ראשי</AOSLink>
           <AOSLink to="hair">טיפולים</AOSLink>
           <AOSLink to="booking">קביעת תור</AOSLink>
-          <AOSLink to="about">עלינו</AOSLink>
+          <AOSLink to="whyUs">עלינו</AOSLink>
           <AOSLink to="contact">צרי קשר</AOSLink>
         </div>
       </nav>

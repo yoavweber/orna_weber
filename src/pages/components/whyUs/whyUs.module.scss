@@ -1,0 +1,26 @@
+@import '../../../layout/common//style.scss';
+
+.header {
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 70%;
+}
+
+.text {
+  width: 40%;
+  text-align: right;
+  margin-right: 7rem;
+  h2 {
+    font-size: $hSize;
+    color: white;
+    line-height: 1em;
+    margin-bottom: 1rem;
+  }
+  h4 {
+    margin-top: 0;
+  }
+}
